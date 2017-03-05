@@ -7,4 +7,4 @@ alias rsd="rsync -av --delete"
 # rsync -av –delete -e ssh /Directory1/ geek@192.168.235.137:/Directory2/
 alias rsrm=" rsync -av –delete -e ssh "
 alias ll="ls -la"\
-pgit="git push -u origin master"
+alias pgit="git push -u origin master"
