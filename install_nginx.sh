@@ -1,6 +1,6 @@
 #!/bin/bash
 #Need to run with SUDO
-set -x
+#set -x
 OS=centos
 OSRELEASE=7
 REPO=$(cat <<EOF
@@ -13,3 +13,11 @@ EOF
 )
 #echo "$REPO"
 echo "$REPO" >> /etc/yum.repos.d/nginx.repo
+rpm --import nginx_signing.key
+yum makecache fast
+yum install -y nginx
+systemctl enable nginx
+systemctl start nginx
+echo "--------------------------------------------------------------------"
+curl -I http://localhost
+echo "--------------------------------------------------------------------"
