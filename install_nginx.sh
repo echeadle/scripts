@@ -46,3 +46,4 @@ ps -ef --forest | grep nginx
 lscpu
 #Check Conf file
 nginx -t
+tail -f /var/log/*
