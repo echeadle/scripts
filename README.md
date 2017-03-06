@@ -1,5 +1,10 @@
 ## scripts
 
+### Added nginx.conf FILES
+ 1. Load Balancer
+ 2. Reverse Proxy
+ 3. Web Server with multiple websites
+ 
 ###Simple scripts to automate functions on my various systems
  1. Installing Docker
  2. Initializing git
