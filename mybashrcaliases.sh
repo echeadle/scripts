@@ -8,3 +8,5 @@ alias rsd="rsync -av --delete"
 alias rsrm=" rsync -av –delete -e ssh "
 alias ll="ls -la"\
 alias pgit="git push -u origin master"
+alias logonad="aws-adfs login --adfs-host aws-sso.cambiahealth.com --profile default"
+alias refreshad="refreshme.sh"
