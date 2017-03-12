@@ -4,7 +4,7 @@ TARGETFOLDER=$2
 
 if [ ! $# == 2 ]
 then
-  echo "$0 requires a two folders"
+  echo "$0 requires two folders: Source Folder Destination Folder"
 
   elif [ -d "$SOURCEFOLDER" ] && [ -d "$TARGETFOLDER" ]
   then
