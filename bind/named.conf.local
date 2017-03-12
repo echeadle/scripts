@@ -1,0 +1,9 @@
+zone "nyc3.example.com" {
+    type master;
+    file "/etc/named/zones/db.nyc3.example.com"; # zone file path
+};
+
+zone "128.10.in-addr.arpa" {
+    type master;
+    file "/etc/named/zones/db.10.128";  # 10.128.0.0/16 subnet
+    };
