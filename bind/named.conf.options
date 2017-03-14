@@ -1,4 +1,11 @@
-#Named Options File
+//
+// Mastering Linux Networking
+// named.conf.options
+//
+// See /usr/share/doc/bind*/sample/ for example named configuration files.
+//
+// See the BIND Administrator's Reference Manual (ARM) for details about the
+// configuration located in /usr/share/doc/bind-{version}/Bv9ARM.html
 
 options {
 	listen-on port 53 { 127.0.0.1; };
@@ -8,7 +15,11 @@ options {
 	statistics-file "/var/named/data/named_stats.txt";
 	memstatistics-file "/var/named/data/named_mem_stats.txt";
 	allow-query     { localhost; };
+  recursion no;
+  pid-file "/run/named/named.pid";
+  session-keyfile "/run/named/session.key";
 };
+
 logging {
         channel default_debug {
                 file "data/named.run";

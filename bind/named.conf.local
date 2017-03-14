@@ -1,16 +1,16 @@
 zone "." IN {
         type hint;
-        file "named.ca";
+        file "/var/named/named.ca";
 };
 
-zone "nyc3.example.com" {
+zone "echeadle.info" {
     type master;
-    file "/etc/named/zones/db.nyc3.example.com"; # zone file path
+    file "/var/named/zones/db.echeadle.info";
 };
 
-zone "128.10.in-addr.arpa" {
+zone "2.0.10.in-addr.arpa" {
     type master;
-    file "/etc/named/zones/db.10.128";  # 10.128.0.0/16 subnet
+    file "/var/named/zones/db.10.0.2";
 };
 
 include "/etc/named.rfc1912.zones";
